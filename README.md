@@ -24,12 +24,6 @@ git clone https://github.com/aswinsagar12/kubernetes.git
 cd kubernetes
 ```
 
-Apply Kubernetes Files:
-
-```bash
-kubectl apply -f <filename>.yaml
-```
-
 🌱 Current Focus Areas
 - Understanding core concepts such as Pods, Services, and Ingress.
 - Working with StatefulSets for stateful applications.
@@ -53,6 +47,8 @@ To set up and run an Ingress demo application, follow these steps:
    Verify the image was built successfully:
    ```bash
    docker images
+   minikube image load flaskapp:v1
+
    ```
 
 3. **Apply Kubernetes Configuration Files:**
@@ -65,6 +61,13 @@ To set up and run an Ingress demo application, follow these steps:
 
 4. **Validate the Application:**
    Check if the application is running correctly by accessing it through the Ingress resource.
+   ```bash
+   kubectl get all
+   minikube ip
+   kubectl get svc
+   curl <minikubeIP>:<nodePort>
+   curl example.com
+   ```
 
 📚 Learning Resources
 As I progress, I'm referencing these Kubernetes resources:
