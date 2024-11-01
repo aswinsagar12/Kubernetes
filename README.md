@@ -1,8 +1,4 @@
-You can add a section to your `README.md` that includes the Ingress demo application commands and explanations. Here's an updated version of your `README.md` with the new information added under a "🚀 Ingress Demo Application" section:
-
-```markdown
-# Kubernetes Practice Repository
-Welcome to my Kubernetes Practice Repository! 👋
+Welcome to my Kubernetes Repository! 👋
 
 This repository is a collection of my experiments, examples, and projects as I deep-dive into the world of Kubernetes. Here, I explore Kubernetes concepts, configurations, and best practices. This repository is a work-in-progress as I continuously learn and practice. Contributions and feedback are welcome!
 
@@ -80,9 +76,3 @@ As I progress, I'm referencing these Kubernetes resources:
 🤝 Contributions
 This repository is primarily for my own learning, but if you have ideas or suggestions, feel free to submit issues or pull requests!
 ```
-
-### Changes Made:
-- **Added a new section** titled "🚀 Ingress Demo Application" that outlines the commands for setting up the Ingress, building the Docker application, applying the Kubernetes configurations, and validating the application.
-- Included instructions with clear steps and code blocks for easier readability.
-
-Feel free to modify any part of the new section to better match your style or preferences!
