@@ -1,4 +1,5 @@
-Welcome to my Kubernetes Repository! 👋
+# Kubernetes Practice Repository
+Welcome to my Kubernetes Practice Repository! 👋
 
 This repository is a collection of my experiments, examples, and projects as I deep-dive into the world of Kubernetes. Here, I explore Kubernetes concepts, configurations, and best practices. This repository is a work-in-progress as I continuously learn and practice. Contributions and feedback are welcome!
 
@@ -11,6 +12,11 @@ This repository is a collection of my experiments, examples, and projects as I d
 - Advanced Topics: Includes configurations for StatefulSets, DaemonSets, Jobs, and CronJobs.
 - CI/CD Integrations: Kubernetes configurations for automating deployments in CI/CD pipelines.
 
+## Branches Overview
+- **master**: This branch contains general Kubernetes practice materials and foundational knowledge.
+- **Ingress**: This branch focuses on the deployment of applications using Ingress resources, demonstrating secure and efficient routing for web applications.
+- **[Other Branches]**: Additional branches will be created for specific Kubernetes topics, such as networking, storage solutions, resource management, and CI/CD practices.
+
 🚀 Getting Started
 To replicate and run these configurations on your own setup:
 
@@ -22,60 +28,4 @@ Clone This Repository:
 ```bash
 git clone https://github.com/aswinsagar12/kubernetes.git
 cd kubernetes
-```
-
-🌱 Current Focus Areas
-- Understanding core concepts such as Pods, Services, and Ingress.
-- Working with StatefulSets for stateful applications.
-- Setting up networking and access controls for secure deployments.
-- Experimenting with resource management to optimize performance.
-
-🚀 Ingress Demo Application
-To set up and run an Ingress demo application, follow these steps:
-
-1. **Enable the Ingress Add-on in Minikube:**
-   ```bash
-   minikube addons enable ingress
-   ```
-
-2. **Build the Flask Application Docker Image:**
-   Change to the Flask application directory and build the Docker image:
-   ```bash
-   cd Flask
-   docker build -t flaskapp:v1 .
-   ```
-   Verify the image was built successfully:
-   ```bash
-   docker images
-   minikube image load flaskapp:v1
-
-   ```
-
-3. **Apply Kubernetes Configuration Files:**
-   Once the image is built, return to the repository directory and apply the necessary Kubernetes configurations for the Service, Deployment, and Ingress:
-   ```bash
-   kubectl apply -f service.yaml
-   kubectl apply -f deployment.yaml
-   kubectl apply -f ingress.yaml
-   ```
-
-4. **Validate the Application:**
-   Check if the application is running correctly by accessing it through the Ingress resource.
-   ```bash
-   kubectl get all
-   minikube ip
-   kubectl get svc
-   curl <minikubeIP>:<nodePort>
-   curl example.com
-   ```
-
-📚 Learning Resources
-As I progress, I'm referencing these Kubernetes resources:
-
-- Kubernetes Official Documentation
-- Kubernetes on GitHub
-- Kubernetes Patterns
-
-🤝 Contributions
-This repository is primarily for my own learning, but if you have ideas or suggestions, feel free to submit issues or pull requests!
 ```
